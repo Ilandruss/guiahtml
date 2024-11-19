@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +7,12 @@
 </head>
 <body>
 </html>
+<form>
 <label for="Nombre">Nombre:</label>
-<input type="text"name="Ingrese su Nombre"id=nombre required part="[A-z a-z]+" title="Ingrese solo letras">
+<input type="text"name="Ingrese su Nombre"id="Nombre" required pattern="[A-z a-z]+" title="Ingrese solo letras">
 <br> <br>
 <label for="Apellido">Apellido:</label>
-<input type="text"name="Ingrese su Apellido"id=apellido required part="[A-z a-z]+" title="Ingrese solo letras">
+<input type="text"name="Ingrese su Apellido"id="apellido" required pattern="[A-z a-z]+" title="Ingrese solo letras">
 <br> <br>
 <label for="color">Color Favorito:</label>
 <input type="color" id="color" name="color" required>
@@ -23,7 +24,7 @@
 <input type="text" id="numero " name="numero">
 <br><br>
 <label for="numero">Positivo:</label>
-<input type="text"name="positivo"id=numero required part="[0-9]+" title="Ingrese un numero positivo">
+<input type="text"name="positivo"id="numero" required pattern="[0-9]+" title="Ingrese un numero positivo">
 <br> <br>
 <label for="Maximo-minimo">Maximo-minimo</label>
 <input type="number"name="Maximo-minimo"step="0.5" min="10" max="20" value="15">
@@ -44,14 +45,14 @@
 <br><br>
 <label for="Genero">Genero</label>
 <select name="Genero"id="Genero">
- <option value="Ciudad1">Masculino</option>
- <option value="Ciudad2">Femenino</option>
- <option value="Ciudad3">otros generos</option>
+ <option value="Genero1">Masculino</option>
+ <option value="Genero2">Femenino</option>
+ <option value="Genero3">otros generos</option>
 </select>
 <br><br>
 <label for="Materias">Materias</label>
 <select name="Materias"id="Materias">
- <option value="Materias3">Escoja una opcion</option>
+ <option value="Materias0">Escoja una opcion</option>
  <option value="Materias1">HTML</option>
  <option value="Materias2">CSS</option>
  <option value="Materias3">JS</option>
@@ -64,12 +65,13 @@
 <input type="file" name="Archivos" accept=".jpg-png" multiple>
 <br><br>
 <label for="contraseña">Contraseña:</label>
-<input type="Contraseña" name="contraseña" id="contraseña" required>
+<input type="Contraseña" name="contraseña" id="contraseña" required pattern="">
 <br><br>
-<input type="text" name="nombre" id="nombre" value="Andrew Fabian Garcia Blanco" required>
+<input type="text" name="nombre" id="nombre" value="Andrew Garcia " required>
 <br><br>
 
 <button type="submit">Enviar</button>
+</form>
 </body>
 </html>
 
